@@ -90,7 +90,7 @@ def login(request):
                     data1 = StudentQuery.objects.filter(stu_email=email)
                     return render(request,'dashboard.html',{'data':data,'query':form1,'data1':data1})
                 else:
-                    msg = "Email & Password not matched"
+                    msg = "email & password not mAtched"
                     return render(request,'login.html',{'form':form,'msg':msg})
             else:
                 msg = "Email not register so please register first"
