@@ -51,7 +51,7 @@ def home(request):
             password = data.cleaned_data['stu_password']
             print(name,email,city,contact,password)
             data.save()
-            msg="Registration Successfully"
+            msg="registration successfully"
             return render(request,'home.html',{'form':form,'msg':msg})
     else:
         return render(request,'home.html',{'form':form})
